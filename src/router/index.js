@@ -1,26 +1,26 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import TaskView from '../views/TaskView.vue'
-import ProfileView from '../views/ProfileView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import TaskView from "../views/TaskView.vue";
+import ProfileView from "../views/ProfileView.vue";
 
 const routes = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'Tasks',
+      path: "/",
+      name: "Tasks",
       component: TaskView,
     },
     {
-      path: '/profile',
-      name: 'Profile',
+      path: "/profile",
+      name: "Profile",
       component: ProfileView,
     },
   ],
-})
+});
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
