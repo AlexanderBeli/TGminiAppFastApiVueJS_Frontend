@@ -41,7 +41,7 @@ export default {
       try {
         const tg_user = window.Telegram.WebApp.initDataUnsafe?.user;
         const response = await fetch(
-          `https://orange-sniffle-4xr5qq5g69wfq4wq-8000.app.github.dev/api/tasks/${tg_user.id}`
+          `https://studious-robot-jxgvrrv497j25wj-8000.app.github.dev/api/tasks/${tg_user.id}`
         );
         const data = await response.json();
         this.tasks = data;
@@ -55,7 +55,7 @@ export default {
       try {
         const tg_user = window.Telegram.WebApp.initDataUnsafe?.user;
         const response = await fetch(
-          `https://orange-sniffle-4xr5qq5g69wfq4wq-8000.app.github.dev/api/add/`,
+          `https://studious-robot-jxgvrrv497j25wj-8000.app.github.dev/api/add/`,
           {
             method: "POST",
             headers: {
@@ -77,7 +77,7 @@ export default {
     async completeTask(taskId) {
       try {
         const response = await fetch(
-          `https://orange-sniffle-4xr5qq5g69wfq4wq-8000.app.github.dev/api/completed/`,
+          `https://studious-robot-jxgvrrv497j25wj-8000.app.github.dev/api/completed/`,
           {
             method: "PATCH",
             headers: {
@@ -98,7 +98,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .task-container {
   flex: 1;
   display: flex;
